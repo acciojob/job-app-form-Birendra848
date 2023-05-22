@@ -8,8 +8,10 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="get">
-		<div><caption>Job App From</caption></div>
+	<div><h1 style="text-align:center">Job App Form</h1></div>
+	<div style="margin:0 50% 0 50%;">
+	<form method="post">
+		<div><caption>Register Here</caption></div>
 		<br>
 		
 		<label for="name">Name</label>
@@ -19,20 +21,18 @@
 		<input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
             value="biren@gmail.com"
             name="email"
-            id="email" />
+            id="email" required/>
 		<br><br>
+		
 		<label for="gender">Gender</label>
 		<br>
+		
 		<input type="radio" id="male" name="gender"value="Male" required/>
 		<label for="male">Male</label>
-
+		<br>
 		<input type="radio" name="gender" id="female" value="Female" required/>
 		<label>Female</label>
-
-		<input type="radio" name="gender" id="others" value="others">
-		<label for="others">Others</label>
 		<br><br>
-
 		<label for="laptop">Laptop Brands</label>
 		<br>
 		<select id="laptop" name="laptop">
@@ -62,8 +62,9 @@
 		<input type="url" id="portfolio" value="biren@example.com"/>
 		<br><br>
 
-		<input type="button" value="Submit"/>
+		<input type="submit" value="Submit"/>
 	</form>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
