@@ -8,6 +8,62 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form method="get">
+		<div><caption>Job App From</caption></div>
+		<br>
+		
+		<label for="name">Name</label>
+		<input type="text" id="name" required/>
+		<br><br>
+		<labe for="email">Email</labe>
+		<input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+            value="biren@gmail.com"
+            name="email"
+            id="email" />
+		<br><br>
+		<label for="gender">Gender</label>
+		<br>
+		<input type="radio" id="male" name="gender"value="Male" required/>
+		<label for="male">Male</label>
+
+		<input type="radio" name="gender" id="female" value="Female" required/>
+		<label>Female</label>
+
+		<input type="radio" name="gender" id="others" value="others">
+		<label for="others">Others</label>
+		<br><br>
+
+		<label for="laptop">Laptop Brands</label>
+		<br>
+		<select id="laptop" name="laptop">
+			<option value="Apple">Apple</option>
+			<option value="Asus">Asus</option>
+			<option value="HP">HP</option>
+		</select>
+		<br><br>
+
+		<label for="age">Age</label>
+		<br>
+		<input id="age" type="number" required/>
+		<br><br>
+
+		<label for="dob">DOB</label>
+		<br>
+		<input type="date"id="dob" required/>
+		<br><br>
+
+		<label for="password">Password</label>
+		<br>
+		<input type="password" id="password" required/>
+		<br><br>
+
+		<label for="portfolio">Portfolio</label>
+		<br>
+		<input type="url" id="portfolio" value="biren@example.com"/>
+		<br><br>
+
+		<input type="button" value="Submit"/>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
